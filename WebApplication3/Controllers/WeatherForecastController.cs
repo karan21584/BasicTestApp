@@ -21,8 +21,8 @@ namespace WebApplication3.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        [HttpGet("WeatherForecast")]
-        public IEnumerable<WeatherForecast> WeatherForecast()
+        [HttpGet("WeatherForecastDetails")]
+        public IEnumerable<WeatherForecast> WeatherForecastDetails()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
