@@ -5,8 +5,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication3.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    //[Route("api")]
     public class WeatherForecastController : ControllerBase
     {
         public readonly IConfiguration _configuration;
@@ -21,7 +21,6 @@ namespace WebApplication3.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        //[Route("WeatherForecast")]
         [HttpGet("WeatherForecast")]
         public IEnumerable<WeatherForecast> WeatherForecast()
         {
@@ -34,7 +33,6 @@ namespace WebApplication3.Controllers
             .ToArray();
         }
 
-        //[Route("GetAllRoles")]
         [HttpGet("GetAllRoles")]
         public IActionResult GetAllRoles()
         {
