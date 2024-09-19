@@ -3,13 +3,10 @@
 ################################################################################
 
 /.vs
-/.vs/BasicTestApp
-/.vs/BasicTestApp/config
 /.vs/BasicTestApp/DesignTimeBuild
 /.vs/BasicTestApp/FileContentIndex
 /.vs/BasicTestApp/v17
 /.vs/ProjectEvaluation
-/.vs/ProjectSettings.json
 /.vs/slnx.sqlite
 /.vs/VSWorkspaceState.json
 /BlazorApp1

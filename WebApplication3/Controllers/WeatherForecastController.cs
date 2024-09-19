@@ -14,7 +14,7 @@ namespace WebApplication3.Controllers
         public WeatherForecastController(IConfiguration configuration)
         {
             _configuration = configuration;
-            _connectionString = _configuration.GetSection("ConnectionStrings:DataBase").Value.ToString();
+            _connectionString = _configuration.GetSection("ConnectionStrings:DbContext").Value.ToString();
         }
         private static readonly string[] Summaries = new[]
         {
@@ -83,7 +83,7 @@ namespace WebApplication3.Controllers
 
             command.Dispose();
             conn.Close();
-            return rolesList;
+            return rolesList; 
         }
 
         private class Roles
